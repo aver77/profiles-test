@@ -1,0 +1,8 @@
+@mixin hw($h, $w) {
+    height: $h;
+    width: $w;
+}
+@mixin fsfw($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}

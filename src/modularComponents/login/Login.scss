@@ -1,0 +1,70 @@
+@import '../../styles/variables/variable.scss';
+@import '../../styles/mixins/mixin.scss';
+@import '../../styles//templates/template.scss';
+
+.login {
+    position: fixed;
+    width: 400px;
+    min-height: 300px;
+    // @include hw(300px, 400px);
+    border: 2px solid black;
+    background:$clr;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.4);
+
+    &__img-close {
+        @include hw($fsB, $fsB);
+    }
+    &__close {
+        position: absolute;
+        top: $fsS;
+        right: $fsS;
+    }
+    &__form {
+        position: relative;
+        text-align: center;
+        @include hw(100%, 100%);
+    }
+    &__title {
+        padding-top: 64px;
+        @include fsfw($fsB, 500);
+    }
+    &__section {
+        @include hw(auto, 100%);
+        padding: 20px;
+    }
+    &__input {
+        &-password {
+            margin-top: 20px;
+        }
+        &-login, &-password {
+            @include hw($fsUb, 100%);
+            padding: $fsUs;
+            @extend %border;
+        }
+    }
+    &__text {
+        &-login, &-password {
+            display: none;
+            margin-top: 6px;
+            color: red;
+            @include fsfw($fsS, 500);
+        }
+    }
+    &__submit {
+        margin-top: 18px;
+        margin-bottom: 18px + $fsS;
+        border-radius: 5px;
+        @extend %border;
+        padding: 4px 8px 4px 8px;
+        transition: .2s ease;
+        &:focus, &:hover, &:active {
+            opacity: 0.6;
+        }
+    }
+}

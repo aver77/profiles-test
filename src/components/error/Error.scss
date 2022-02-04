@@ -1,0 +1,19 @@
+@import '../../styles/templates/template.scss';
+@import '../../styles/mixins/mixin.scss';
+
+.error {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    @extend %flex;
+    flex-direction: column;
+    z-index: 100;
+    &__img {
+        @include hw(84px, 84px);
+    }
+    &__text {
+        padding-top: 14px;
+        @include fsfw(20px, 400);
+    }
+}

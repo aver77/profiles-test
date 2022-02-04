@@ -1,0 +1,9 @@
+@import '../../styles/templates/template.scss';
+@import '../../styles/variables/variable.scss';
+
+.main {
+    margin-top: $mt;
+    &__wrapper {
+        @extend %flex;
+    }
+}

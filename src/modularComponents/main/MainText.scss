@@ -1,0 +1,8 @@
+@import '../../styles//variables/variable.scss';
+@import '../../styles/mixins/mixin.scss';
+
+.main {
+    &__text {
+        @include fsfw($fsUb, 400);
+    }
+}
