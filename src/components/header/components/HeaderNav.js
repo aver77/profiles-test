@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
-
-import HeaderImg from './HeaderImg';
 import HeaderSection from './HeaderSection';
+import HeaderImg from './HeaderImg';
 
 const HeaderNav = () => {
     return (

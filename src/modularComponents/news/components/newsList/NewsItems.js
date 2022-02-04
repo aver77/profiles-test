@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import NewsCard from '../newsCard/NewsCard';
 
 const NewsItems = ({news, isAdmin = null, filtered = null}) => {
@@ -22,4 +22,4 @@ return (
     )
 };
 
-export default NewsItems;
+export default memo(NewsItems);

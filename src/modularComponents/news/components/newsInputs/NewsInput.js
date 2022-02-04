@@ -5,7 +5,6 @@ import { addNewByUser } from '../../../../redux/newsSlice';
 
 const NewsInput = () => {
     const dispatch = useDispatch();
-
     const inputRef = useRef(null);
 
     const keyPressHandler = (e) => {
@@ -14,13 +13,11 @@ const NewsInput = () => {
             inputHandler();
         }
     }
-
     const inputRefHandler = () => {
         let result;
         !inputRef? result = '' : result = inputRef.current.value;
         return result;
     }
-
     const inputHandler = () => {
         const data = inputRefHandler();
         if (data.trim()) {
@@ -46,5 +43,4 @@ const NewsInput = () => {
         </div>
     );
 };
-
 export default memo(NewsInput);

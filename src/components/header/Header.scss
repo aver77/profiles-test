@@ -6,12 +6,26 @@
     height: 64px;
     background: $clr;
     box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16);
+    @media screen and (max-width: $mob) {
+        height: 128px;
+    }
     &__wrapper, &__nav, &__list, &__section {
         height: 100%;
     }
     &__list {
         @extend %flex;
         justify-content: space-between;
+        @media screen and (max-width: $mob) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__logo-list {
+        @extend %flex;
+        @media screen and (max-width: $mob) {
+            margin-top: $fsUs;
+            min-width: 100%;
+        }
     }
     &__section {
         @extend %flex;

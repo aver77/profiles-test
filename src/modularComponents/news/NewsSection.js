@@ -3,6 +3,8 @@ import NewsListWrap from './components/newsList/NewsListWrap';
 import NewsSearch from './components/newsInputs/NewsSearch';
 import NewsInput from './components/newsInputs/NewsInput';
 
+import './NewsSection.scss';
+
 const NewsSection = () => {
 
     const [searchingValue, setSearchingValue] = useState('');

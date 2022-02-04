@@ -8,9 +8,7 @@ import './Login.scss';
 const Login = ({openLoginHandler}) => {
     const loginRef = useRef(null);
 
-    const clickHandler = useCallback(() => {
-        openLoginHandler(false);
-    }, [])
+    const clickHandler = useCallback(() => openLoginHandler(false), []);
 
     useEffect(() => {
         const Method = new Methods();

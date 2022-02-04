@@ -11,6 +11,7 @@ const NewsPage = () => {
     const auth = useSelector(state => state.authSlice.isAuth);
     const currentUser = useSelector(state => state.authSlice.role);
     const LD = new LogData();
+    
     return (
         <div className='news'>
             <div className='news__wrapper _container'>

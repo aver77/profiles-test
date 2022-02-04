@@ -15,5 +15,8 @@
         @include fsfw($fsS, 400);
         color: #545454;
         margin-top: 13px;
+        @media screen and (max-width: $mob) {
+            @include fsfw($fsUs, 400);
+        }
     }
 }
