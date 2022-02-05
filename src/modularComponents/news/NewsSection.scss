@@ -6,10 +6,6 @@
     &__section {
         display: flex;
         flex-direction: column;
-        &-card {
-            padding: 10px;
-            margin: 0 -10px;
-        }
     }
     &__list {
         margin-top: $fsS;
@@ -44,7 +40,12 @@
         color: #545454;
     }
     &__img-card {
+        @include hw($fsUb, $fsUb);
         margin: 0 10px;
+    }
+    &__section-card {
+        padding: 10px;
+        margin: 0 -10px;
     }
     // inputs
     &__set-section, &__search-section {
@@ -75,5 +76,14 @@
         @extend %border;
         margin-left: $fsUs;
         padding: 4px $fsM 4px $fsM;
+        transition: .2s ease;
+        &:focus, &:hover, &:active {
+            opacity: 0.6;
+        }
+        @media screen and (max-width: $mob) {
+            &:focus, &:hover, &:active {
+                opacity: 1;
+            }
+        }
     }
 }

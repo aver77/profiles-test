@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback, useEffect, useRef } from 'react';
-import LoginForm from './components/LoginForm';
+import LoginForm from './components/loginForm/LoginForm';
 import Methods from '../../utils/methods';
 
 import './Login.scss';

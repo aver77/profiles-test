@@ -68,5 +68,10 @@
         &:focus, &:hover, &:active {
             opacity: 0.6;
         }
+        @media screen and (max-width: $mob) {
+            &:focus, &:hover, &:active {
+                opacity: 1;
+            }
+        }
     }
 }

@@ -24,7 +24,7 @@ const NewsInput = () => {
             const currentDate = new Date();
             const newForAdd = {
                 id: uuidv4(),
-                name: data.slice(0,10) + '...',
+                name: data.length>10? data.slice(0,10) + '...' : data,
                 description: data,
                 date: `${currentDate.getDay()}.${currentDate.getMonth()}.${currentDate.getFullYear()}`
             }

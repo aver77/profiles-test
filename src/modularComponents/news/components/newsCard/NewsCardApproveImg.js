@@ -1,8 +1,8 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { approveNewByAdmin, disapproveNewByAdmin } from '../../../../redux/newsSlice';
 
-const NewsCardApproveImg = ({src, alt, id }) => {
+const NewsCardApproveImg = ({src, alt, id}) => {
     const dispatch = useDispatch();
 
     const clickHandler = () => {
@@ -19,4 +19,4 @@ const NewsCardApproveImg = ({src, alt, id }) => {
     );
 };
 
-export default memo(NewsCardApproveImg);
+export default NewsCardApproveImg;

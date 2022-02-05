@@ -2,8 +2,8 @@ import React from 'react';
 import {Route, Routes, BrowserRouter as Router} from 'react-router-dom';
 
 import Header from '../header/Header';
-import MainPage from '../../pages/MainPage/MainPage';
-import NewsPage from '../../pages/NewsPage/NewsPage';
+import MainPage from '../../pages/mainPage/MainPage';
+import NewsPage from '../../pages/newsPage/NewsPage';
 import Footer from '../footer/Footer';
 import Error from '../error/Error';
 

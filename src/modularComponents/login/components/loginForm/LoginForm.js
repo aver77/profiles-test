@@ -1,10 +1,10 @@
 import React, { memo, useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { authorize } from '../../../redux/authSlice';
-import Methods from '../../../utils/methods';
-import LoginClose from './LoginBtns/LoginClose';
-import LoginSubmit from './LoginBtns/LoginSubmit';
-import LoginSection from './LoginSection';
+import { authorize } from '../../../../redux/authSlice';
+import Methods from '../../../../utils/methods';
+import LoginClose from '../loginBtns/LoginClose';
+import LoginSubmit from '../loginBtns/LoginSubmit';
+import LoginSection from '../loginInput/LoginSection';
 import LoginTitle from './LoginTitle';
 
 const LoginForm = ({openLoginHandler}) => {
